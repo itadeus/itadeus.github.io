@@ -307,7 +307,7 @@ body.dark_mode #backButton {
 #techButton,
 #travelButton,
 #soccerButton,
-#musicButtong {
+#musicButton {
    width: 60px;
   height: 60px;
   margin: 0;
@@ -326,7 +326,7 @@ body.dark_mode #backButton {
 #techButton: hover,
 #travelButton: hover,
 #soccerButton: hover,
-#musicButtong: hover {
+#musicButton: hover {
   transform: scale(1.1);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
   0 0 20px 6px #cb9d46;
