@@ -57,7 +57,33 @@ h1{
   z-index: 1000;
 }
 
+#homeButton{
+   width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  padding: 8px 16px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(226, 217, 195);
+  transition: transform 0.3s ease;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  color: white;
+  z-index: 1000;
+}
+
 #mode_button:hover {
+  transform: scale(1.1);
+  background-color: #ffeac4;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
+  0 0 20px 6px #654406;
+}
+
+#homeButton:hover {
   transform: scale(1.1);
   background-color: #ffeac4;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
