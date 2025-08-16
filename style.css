@@ -148,7 +148,7 @@ h1{
   width: 260px;
   transition: transform 0.3s ease;
 }
-.achievements{
+.achievement{
   background-color: #e6d5bc;
   border-radius: 10px;
   padding: 15px;
@@ -162,7 +162,7 @@ h1{
 .about:hover,
 .about1:hover,
 .bio:hover, 
-.achievements:hover,
+.achievement:hover,
 .picture img:hover{
   transform: scale(1.1);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
@@ -189,7 +189,7 @@ footer {
 
 .dark_mode .bio { background-color: #2f2f2f; }
 .dark_mode .about { background-color: #000000;}
-.dark_mode .achievements { background-color: #000000;}
+.dark_mode .achievement { background-color: #000000;}
 .dark_mode .about1 { background-color: #000000;}
 .dark_mode .hobbies { background-color: #000000; }
 .dark_mode .goals { background-color: #6d6d6d;}
