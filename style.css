@@ -1,0 +1,268 @@
+html, body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  flex: 1;
+}
+
+header{
+  text-align: center;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+h1{
+  font-size: 30px;
+}
+
+#mode_button {
+  width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  margin: 0;
+  padding: 8px 16px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(226, 217, 195);
+  transition: transform 0.3s ease;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  color: white;
+  z-index: 1000;
+}
+
+#backButton{
+   width: 60px;
+  height: 60px;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  margin: 0;
+  padding: 8px 16px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(226, 217, 195);
+  transition: transform 0.3s ease;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  color: white;
+  z-index: 1000;
+}
+
+#mode_button:hover {
+  transform: scale(1.1);
+  background-color: #ffeac4;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
+  0 0 20px 6px #654406;
+}
+
+
+.image {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  flex-direction: column;
+  
+}
+
+
+
+.picture img {
+  width: 300px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+}
+
+
+.bio {
+  background-color: #e2dad6;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  width: 260px;
+  transition: transform 0.3s ease;
+}
+
+.hobbies {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  width: 260px;
+  background-color: #dcb978;
+  transition: transform 0.3s ease;
+}
+
+
+.goals {
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  width: 260px;
+  background-color: #a4814b;
+  transition: transform 0.3s ease;
+}
+
+.about {
+  background-color: #e6d5bc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  width: 260px;
+  transition: transform 0.3s ease;
+}
+
+.hobbies:hover, 
+.goals:hover, 
+.about:hover,
+.about1:hover,
+.bio:hover, 
+.picture img:hover{
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
+  0 0 20px 6px #cb9d46;
+  z-index: 1000;
+}
+
+
+footer {
+  text-align: center;
+}
+
+/* Light Mode */
+.light_mode {
+  color: #1a1a1a;
+  background: linear-gradient(to right, #d9ceaf,#ffffff);
+}
+
+/* Dark Mode */
+.dark_mode {
+  color: #f5f5f5;
+  background: linear-gradient(to right, #000000,#42413d);
+}
+
+.dark_mode .bio { background-color: #2f2f2f; }
+.dark_mode .about { background-color: #000000;}
+.dark_mode .about1 { background-color: #000000;}
+.dark_mode .hobbies { background-color: #000000; }
+.dark_mode .goals { background-color: #6d6d6d;}
+
+@media (min-width: 768px) {
+  .image {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .picture, .bio, .hobbies, .goals, .about {
+    flex: 1 1 1 1 1 10%;
+  }
+}
+/*about.html*/
+.about1 {
+  background-color: #e6d5bc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  width: 260px;
+  transition: transform 0.3s ease;
+}
+
+#profileButton{
+  border: none;
+  margin-top: 30px;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 1000;
+  background-color: #c9bb7d;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button_container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 220px;
+}
+  
+
+#backButton:hover,
+#aboutButton:hover,
+#hobbiesButton:hover,
+#goalsButton:hover,
+#bioButton:hover,
+#profileButton:hover {
+  transform: scale(1.1);
+  background-color: #ffeac4;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
+  0 0 20px 6px #654406;
+}
+
+
+#aboutButton,
+#hobbiesButton,
+#goalsButton,
+#bioButton {
+  background-color: #d3d3d3; 
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+/* Light Mode */
+body.light_mode #aboutButton,
+body.light_mode #backButton {
+  background-color: #d3d3d3; 
+  color: black;
+}
+
+/* Dark Mode */
+body.dark_mode #aboutButton,
+body.dark_mode #backButton {
+  background-color: white;
+  color: black;
+}
+
+.popup-buttons button:hover {
+  background-color: #c0c0c0;
+}
+/*welcome page*/
+.imageh {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px;
+  flex-wrap: wrap;
+  max-width: 100%;
+  flex-direction: row;
+  
+}
+.picture2 img {
+  width: 260px;
+  height: 260px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  transition: transform 0.3s ease;
+  transform: scale(1.1);
+  background-color: #ffeac4;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
+  0 0 20px 6px #654406;
+}
