@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About me</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light_mode">
+
+  <header>
+    <h1> 🥶 About Me</h1>
+  </header>
+
+  <button id="mode_button">⚙️</button>
+  <button id="backButton" onclick="window.location.href='profile.html'">↩️</button>
+
+
+  <main>
+    <section class="image">
+      <div class="picture">
+        <img src="cor.jpeg" alt="About Me Image" />
+      </div>
+      <div class="about1">
+      <p>
+        I am currently studying for a Bachelor of Informatics at Namibia University of Science and Technology.
+        I am also an Ambassador at Mobile Telecommunications Limited (MTC) Namibia.
+        My passion lies in web development and creating meaningful digital experiences.
+      </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p><b> @2025 Tadeus Kalola 永 </b></p>
+  </footer>
+
+<script>
+  const button = document.getElementById("mode_button");
+  const body = document.body;
+
+  // Apply saved mode on load
+  const savedMode = localStorage.getItem("mode");
+  if (savedMode === "dark") {
+    body.classList.add("dark_mode");
+    body.classList.remove("light_mode");
+  } else {
+    body.classList.add("light_mode");
+    body.classList.remove("dark_mode");
+  }
+
+  // Toggle mode on button click
+  button.addEventListener("click", () => {
+    body.classList.toggle("dark_mode");
+    body.classList.toggle("light_mode");
+
+    // Save the current mode
+    const isDark = body.classList.contains("dark_mode");
+    localStorage.setItem("mode", isDark ? "dark" : "light");
+  });
+</script>
+
+
+</body>
+</html>

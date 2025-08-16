@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light_mode">
+
+  <button id="mode_button">⚙️</button>
+  <button id="backButton" onclick="window.location.href='index.html'">↩️</button>
+
+  
+
+  <header>
+    <h1>My Profile</h1>
+    <p><b>✍️ Future Web Developer | 
+      Bachelor of Informatics Student</b></p>
+  </header>
+
+  
+
+  <main>
+    <section class="image">
+      <div class="picture">
+        <img src="profile2.jpeg"alt="Profile Picture">
+      </div>
+      <div class="bio">
+        <button id="bioButton" onclick="window.location.href='bio.html'">📎 Bio </button>
+        <p><b>🧑‍💼 Name:</b> Tadeus Kalola</p>
+        <p><b>✉️ email:</b> <a href="mailto: tadeuskalola@gmail.com"><b></b>tadeuskalola@gmail.com</a></p>
+      </div>
+      <div class="about">
+      <button id="aboutButton" onclick="window.location.href='about.html'">🥶 About Me</button>
+      <p>My passion lies in web development and creating meaningful digital experiences.</p>
+    </div>
+      <div class="hobbies">
+        <button id="hobbiesButton" onclick="window.location.href='hobbies.html'">🎯 Hobbies</button>
+        <ul>
+          <li>🧑‍💻 Technology</li>
+          <li>🚗 Traveling</li>
+          <li>🎧 Listening to Music</li>
+        </ul>
+      </div>
+      <div class="goals">
+        <button id="goalsButton" onclick="window.location.href='goals.html'">⚽ Goals </button>
+        <p>Enhance my coding skills, complete personal web projects, and land my first professional web development role.</p>
+      </div>
+      
+    </section>
+  </main>
+
+  <footer>
+    <p><b> @2025 Tadeus Kalola 永 </b></p>
+  </footer>
+
+  <script>
+  const button = document.getElementById("mode_button");
+  const body = document.body;
+
+  // Check stored mode
+  const savedMode = localStorage.getItem("mode");
+  if (savedMode === "dark") {
+    body.classList.add("dark_mode");
+    body.classList.remove("light_mode");
+  } else {
+    body.classList.add("light_mode");
+    body.classList.remove("dark_mode");
+  }
+
+  button.addEventListener("click", () => {
+    body.classList.toggle("dark_mode");
+    body.classList.toggle("light_mode");
+
+    //Save current mode
+    const isDark = body.classList.contains("dark_mode");
+    localStorage.setItem("mode", isDark ? "dark" : "light");
+  });
+</script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>

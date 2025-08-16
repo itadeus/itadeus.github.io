@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light_mode">
+
+  <header>
+    <h1>📎 Bio </h1>
+  </header>
+
+  <button id="mode_button">⚙️</button>
+  <button id="backButton" onclick="window.location.href='profile.html'">↩️</button>
+
+
+  <main>
+    <section class="image">
+      <div class="bio">
+        <p><b>🧑‍💼 Name:</b> Tadeus Kalola</p>
+        <p><b>📱 Cell:</b> +264814011326</p>
+        <p><b>🤝 Profession:</b> Customer Service</p>
+        <p><b>♍ Zodiac Sign:</b> Virgo</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+  <p><b> @2025 Tadeus Kalola 永 </b></p>
+  </footer>
+
+<script>
+  const button = document.getElementById("mode_button");
+  const body = document.body;
+
+  // Apply saved mode on load
+  const savedMode = localStorage.getItem("mode");
+  if (savedMode === "dark") {
+    body.classList.add("dark_mode");
+    body.classList.remove("light_mode");
+  } else {
+    body.classList.add("light_mode");
+    body.classList.remove("dark_mode");
+  }
+
+  // Toggle mode on button click
+  button.addEventListener("click", () => {
+    body.classList.toggle("dark_mode");
+    body.classList.toggle("light_mode");
+
+    // Save the current mode
+    const isDark = body.classList.contains("dark_mode");
+    localStorage.setItem("mode", isDark ? "dark" : "light");
+  });
+</script>
+
+
+</body>
+</html>
