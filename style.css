@@ -303,3 +303,32 @@ body.dark_mode #backButton {
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
   0 0 20px 6px #654406;
 }
+
+#techButton,
+#travelButton,
+#soccerButton,
+#musicButtong {
+   width: 60px;
+  height: 60px;
+  margin: 0;
+  padding: 8px 16px;
+  font-size: 1.2em;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(226, 217, 195);
+  transition: transform 0.3s ease;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  color: white;
+  z-index: 1000;
+}
+
+#techButton: hover,
+#travelButton: hover,
+#soccerButton: hover,
+#musicButtong: hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
+  0 0 20px 6px #cb9d46;
+  z-index: 1000;
+}
