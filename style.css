@@ -333,17 +333,51 @@ body.dark_mode #backButton {
   z-index: 1000;
 }
 
-.traveling,
-.soccer,
-.music,
-.technology {
-  background-color: #e2dad6;
+.traveling {
+  background-image: url("traveling.jpeg"); 
+  background-size: cover; 
+  background-position: center; 
   border-radius: 10px;
   padding: 15px;
   box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
   width: 260px;
+  height: 180px;
   transition: transform 0.3s ease;
 }
+.soccer {
+  background-image: url("soccer.jpeg"); 
+  background-size: cover; 
+  background-position: center; 
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  width: 260px;
+  height: 180px;
+  transition: transform 0.3s ease;
+}
+.technology {
+  background-image: url("tech.jpeg"); 
+  background-size: cover; 
+  background-position: center; 
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  width: 260px;
+  height: 180px;
+  transition: transform 0.3s ease;
+}
+.music {
+  background-image: url("music.jpeg"); 
+  background-size: cover; 
+  background-position: center; 
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  width: 260px;
+  height: 180px;
+  transition: transform 0.3s ease;
+}
+
 
 .traveling:hover, 
 .soccer:hover, 
