@@ -148,12 +148,21 @@ h1{
   width: 260px;
   transition: transform 0.3s ease;
 }
+.achievements{
+  background-color: #e6d5bc;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
+  width: 260px;
+  transition: transform 0.3s ease;
+}
 
 .hobbies:hover, 
 .goals:hover, 
 .about:hover,
 .about1:hover,
 .bio:hover, 
+.achievements:hover,
 .picture img:hover{
   transform: scale(1.1);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
@@ -180,6 +189,7 @@ footer {
 
 .dark_mode .bio { background-color: #2f2f2f; }
 .dark_mode .about { background-color: #000000;}
+.dark_mode .achievements { background-color: #000000;}
 .dark_mode .about1 { background-color: #000000;}
 .dark_mode .hobbies { background-color: #000000; }
 .dark_mode .goals { background-color: #6d6d6d;}
@@ -190,7 +200,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .picture, .bio, .hobbies, .goals, .about {
+  .picture, .bio, .hobbies, .goals, .about, .achievements {
     flex: 1 1 1 1 1 10%;
   }
 }
@@ -225,6 +235,7 @@ footer {
 
 #backButton:hover,
 #aboutButton:hover,
+#achievementButton:hover,
 #hobbiesButton:hover,
 #goalsButton:hover,
 #bioButton:hover,
@@ -238,6 +249,7 @@ footer {
 
 #aboutButton,
 #hobbiesButton,
+#achievementButton,
 #goalsButton,
 #bioButton {
   background-color: #d3d3d3; 
