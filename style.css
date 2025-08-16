@@ -180,7 +180,6 @@ footer {
 
 #profileButton{
   border: none;
-  margin-top: 30px;
   color: black;
   padding: 10px 20px;
   font-size: 16px;
@@ -194,7 +193,7 @@ footer {
 .button_container {
   display: flex;
   justify-content: center;
-  margin-bottom: 120px;
+  margin-bottom: 50px;
 }
   
 
