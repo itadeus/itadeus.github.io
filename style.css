@@ -38,6 +38,13 @@ h1{
   z-index: 1000;
 }
 
+#mode_button:hover {
+  transform: scale(1.1);
+  background-color: #ffeac4;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
+  0 0 20px 6px #654406;
+}
+
 #backButton{
    width: 60px;
   height: 60px;
@@ -57,7 +64,7 @@ h1{
   z-index: 1000;
 }
 
-#homeButton{
+#galleryButton{
    width: 60px;
   height: 60px;
   position: fixed;
@@ -76,14 +83,7 @@ h1{
   z-index: 1000;
 }
 
-#mode_button:hover {
-  transform: scale(1.1);
-  background-color: #ffeac4;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
-  0 0 20px 6px #654406;
-}
-
-#homeButton:hover {
+#galleryButton:hover {
   transform: scale(1.1);
   background-color: #ffeac4;
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15),
@@ -200,7 +200,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .picture, .bio, .hobbies, .goals, .about, .achievements {
+  .picture, .bio, .hobbies, .goals, .about, .achievement {
     flex: 1 1 1 1 1 10%;
   }
 }
