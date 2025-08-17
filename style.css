@@ -94,7 +94,7 @@ h1{
 .image {
   display: flex;
   justify-content: center;
-  gap: 25px;
+  gap: 20px;
   padding: 20px;
   flex-wrap: wrap;
   max-width: 100%;
@@ -104,8 +104,6 @@ h1{
 
 .picture img {
   width: 200px;
-  height: 200px;
-  object-fit: cover;
   border-radius: 10px;
   box-shadow: 4px 4px 6px rgba(0,0,0,0.4);
   transition: transform 0.3s ease;
