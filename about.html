@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style.css" />
 <script>
   if (performance.navigation.type === 1) {
-    // Page was reloaded
     window.location.href = "index.html";
   }
 </script>
@@ -49,7 +48,6 @@
   const button = document.getElementById("mode_button");
   const body = document.body;
 
-  // Apply saved mode on load
   const savedMode = localStorage.getItem("mode");
   if (savedMode === "dark") {
     body.classList.add("dark_mode");
@@ -59,12 +57,10 @@
     body.classList.remove("dark_mode");
   }
 
-  // Toggle mode on button click
   button.addEventListener("click", () => {
     body.classList.toggle("dark_mode");
     body.classList.toggle("light_mode");
 
-    // Save the current mode
     const isDark = body.classList.contains("dark_mode");
     localStorage.setItem("mode", isDark ? "dark" : "light");
   });
